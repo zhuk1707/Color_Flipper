@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+  font-family: Sora, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #751152;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #fafafa;
+  box-shadow: 0 5px 6px -5px rgba(0, 0, 0, 0.4);
+}
+.header__logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.main {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__panel {
+  margin: 10px 0;
+}
+
+.panel {
+  background-color: #fafafa;
+  box-shadow: 0 5px 6px -5px rgba(0, 0, 0, 0.4);
+  padding: 26px 30px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.panel__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.panel__buttons:not(:last-child) {
+  padding-bottom: 20px;
+}
+.panel__btn {
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: transparent;
+  width: 100%;
+  transition: 0.3s ease;
+}
+.panel__btn:hover, .panel__btn.active {
+  background-color: black;
+  color: white;
+}
+.panel__btn_left {
+  border-radius: 8px 0 0 8px;
+}
+.panel__btn_right {
+  border-radius: 0 8px 8px 0;
+}
+.panel__info {
+  font-size: 30px;
+}
+.panel__info span {
+  font-weight: 500;
+  color: #4b00e0;
+}
+.panel__info:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.footer__body {
+  font-size: 1em;
+  padding: 15px;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.4392156863);
+}
+.footer__body a {
+  color: inherit;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.footer__body a:hover {
+  color: #fafafa;
+}
+
+/*# sourceMappingURL=style.css.map */
