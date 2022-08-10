@@ -29,6 +29,7 @@ button {
 
 body {
   background-color: pink;
+  transition: 0.5s ease;
 }
 
 main {
@@ -52,10 +53,19 @@ main {
   background-color: #fafafa;
   box-shadow: 0 5px 6px -5px rgba(0, 0, 0, 0.4);
 }
+.header__body {
+  display: flex;
+  align-items: center;
+}
 .header__logo {
   font-weight: 800;
   font-size: 1.2rem;
   margin: 10px 0;
+  color: black;
+  transition: 0.3s ease;
+}
+.header__logo:hover {
+  color: grey;
 }
 
 .main {
@@ -85,15 +95,14 @@ main {
 }
 .panel__btn {
   padding: 8px 16px;
-  border: 1px solid black;
   border-radius: 8px;
-  background-color: transparent;
   width: 100%;
-  transition: 0.3s ease;
-}
-.panel__btn:hover, .panel__btn.active {
   background-color: black;
   color: white;
+  transition: 0.1s ease;
+}
+.panel__btn:hover {
+  background-color: #111111;
 }
 .panel__btn_left {
   border-radius: 8px 0 0 8px;
@@ -110,6 +119,20 @@ main {
 }
 .panel__info:not(:last-child) {
   padding-bottom: 20px;
+}
+
+.mode-btn {
+  background-color: #ddd;
+  border: none;
+  color: #5b5b5b;
+}
+.mode-btn:hover {
+  background-color: #232323;
+  color: white;
+}
+.mode-btn.active {
+  background-color: #424242;
+  color: white;
 }
 
 .footer__body {
