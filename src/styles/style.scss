@@ -31,6 +31,17 @@ main {
   &__body {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    & div {
+      color: #5b5b5b;
+      font-size: 14px;
+
+      & span {
+        font-weight: 600;
+      }
+    }
   }
 
   &__logo {
@@ -52,6 +63,25 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+
+  &__notification {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    margin: 10px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    opacity: 0;
+    transition: .3s ease;
+  }
 
   &__panel {
     margin: 10px 0;
@@ -96,11 +126,17 @@ main {
   }
 
   &__info {
-    font-size: 30px;
+    font-size: 24px;
 
     & span {
       font-weight: 500;
-      color: #4b00e0;
+      color: #004ee0;
+
+      transition: .3s ease;
+      &:hover {
+        color: #5518d7;
+        cursor: pointer;
+      }
     }
 
     &:not(:last-child) {
